@@ -1,0 +1,34 @@
+#define motorL1 2
+#define motorL2 3
+#define motorR1 4
+#define motorR2 5
+
+void setup() {
+  pinMode(motorL1,OUTPUT);
+  pinMode(motorR1,OUTPUT);
+   pinMode(motorL2,OUTPUT);
+   pinMode(motorR2,OUTPUT);
+    digitalWrite(motorL1,LOW);
+    digitalWrite(motorR1,LOW);
+     digitalWrite(motorL2,LOW);
+     digitalWrite(motorR2,LOW);
+
+}
+
+void loop() {
+  
+    digitalWrite(motorL1,HIGH);
+    digitalWrite(motorL2,LOW);
+    delay(1000);
+    digitalWrite(motorL1,LOW);
+    digitalWrite(motorL2,HIGH);
+    delay(1000);
+    digitalWrite(motorR1,HIGH);
+    digitalWrite(motorR2,LOW);
+    delay(1000);
+    digitalWrite(motorR1,LOW);
+    digitalWrite(motorR2,HIGH);
+    delay(1000);
+    
+}
+
